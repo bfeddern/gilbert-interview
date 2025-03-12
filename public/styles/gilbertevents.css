@@ -1,0 +1,298 @@
+/* html {
+  position: relative;
+  min-height: 100%;
+} */
+
+.landing {
+  text-align: center;
+}
+
+.product {
+  width: 80%;
+  height: 300px;
+  border-radius: 21px 21px 0 0;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.icon-link > .bi {
+  width: .75em;
+  height: .75em;
+}
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #8e8e8e;
+  transition: color .15s ease-in-out;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+a.button, button.button {
+  display: inline-block;
+  margin: 0 0 0.5rem;
+  padding: 1rem 2rem;
+  background: #f04f24;
+  color: #ffffff !important;
+  border: none;
+  line-height: 1.2;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none !important;
+  vertical-align: middle;
+  border-radius: 2rem;
+  text-transform: uppercase; }
+
+
+.flex-equal > * {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+
+#page_footer {
+  min-width: 0;
+  min-height: 0;
+  width: auto;
+  text-align: left;
+  height: auto;
+  color: #bdbdbd;
+}
+
+#page_footer #footercolumn {
+  margin: 0 auto;
+  position: relative;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.5em;
+  zoom: 1;
+}
+
+#footercolumn {
+  display: flex;
+  float: none;
+}
+
+@media only screen and (max-width : 768px) {
+  #footercolumn {
+    display: block;
+  }
+}
+
+#page_footer p {
+  margin: 0;
+  clear: both !important;
+}
+
+.col-sm-4,
+.col-md-4 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+
+#page_footer #footercolumn .footer_copyright::before {
+  clear: both !important;
+}
+
+#page_footer #footercolumn .footer_copyright {
+  font-size: 13px;
+  padding: 0;
+  color: #B1B5C2;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 48em) {
+  #page_footer {
+    padding: 0;
+    margin: 202px 0 0 0;
+  }
+
+  #page_footer #footercolumn {
+    min-height: 160px;
+    padding: 16px 0 0 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, #sitebody, #siteheader, #footercolumn {
+    width: 1024px;
+    max-width: 1024px;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .container, #sitebody, #siteheader, #footercolumn {
+    width: 950px;
+    max-width: 950px;
+  }
+
+  #page_footer #footercolumn .footer_info,
+  #page_footer #footercolumn .footer_phone,
+  #page_footer #footercolumn .footer_social_icons {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+    height: 95px;
+    text-align: left;
+  }
+
+  #page_footer #footercolumn .footer_info span:after,
+  #page_footer #footercolumn .footer_phone span:after,
+  #page_footer #footercolumn .footer_social_icons span:after {
+    top: 0;
+    left: auto;
+    right: 13px;
+    width: 1px;
+    height: 34px;
+    margin: auto 0;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  #page_footer #footercolumn .footer_info, #page_footer #footercolumn .footer_phone, #page_footer #footercolumn .footer_social_icons {
+      margin-bottom: 0;
+  }
+
+  #page_footer #footercolumn .footer_info span:before, #page_footer #footercolumn .footer_phone span:before, #page_footer #footercolumn .footer_social_icons span:before {
+      position: relative;
+      top: 1px;
+      padding-right: 10px;
+      margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #page_footer #footercolumn .footer_info span:after,
+  #page_footer #footercolumn .footer_phone span:after,
+  #page_footer #footercolumn .footer_social_icons span:after {
+      right: 18px;
+  }
+}
+
+#page_footer #footercolumn:before {
+  content: '';
+  display: block;
+}
+
+#page_footer #footercolumn .footer_info span:before {
+  content: url(https://www.gilbertaz.gov/Project/Contents/Main/_gfx/cmn/address_icon.svg);
+}
+
+#page_footer #footercolumn .footer_phone span:before {
+  content: url(https://www.gilbertaz.gov/Project/Contents/Main/_gfx/cmn/phone_icon.svg);
+}
+
+#page_footer #footercolumn .footer_social_icons span:before {
+  content: url(https://www.gilbertaz.gov/Project/Contents/Main/_gfx/cmn/connect_icon.svg);
+}
+
+@media screen and (min-width: 48em) 
+  {
+    body.front_end_body {
+      background-image: url('https://www.gilbertaz.gov/home/showpublishedimage/19872/637508739763770000') !important;
+    }
+  }
+
+
+/* #page_footer #footercolumn .footer_info span:after, #page_footer #footercolumn .footer_phone span:after, #page_footer #footercolumn .footer_social_icons span:after {
+  content: '';
+  top: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 34px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0 auto;
+  z-index: 0;
+} */
+
+
+main {
+  min-height: 560px;
+}
+
+header {
+  min-height: 120px;
+  background-color: #242938 !important;
+  width: 100% !important;
+}
+
+#siteheaderdemo .headernav {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+#top_nav {
+  color: #EBE5D2;
+  text-align: right !important;
+  line-height: 30px;
+  padding: 12px 0px 0px 0px;
+  font-size: 13px;
+  width: 100% !important;
+}
+
+.top_search {
+  min-height: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .search_block {
+    display: none;
+  }
+}
+
+.fw-bold {
+  font-weight: 900 !important;
+  color: #242938;
+  font-family: 'Mulish';
+}

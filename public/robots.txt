@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://gilbertevents.info/sitemap.xml
