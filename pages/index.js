@@ -1,6 +1,9 @@
 import Head from 'next/head';
 import GilbertFooter from '/components/layout/gilbert-footer';
 import GilbertHeader from '/components/layout/gilbert-header';
+import EventFeature from '/components/common/event-feature';
+import EventCard from '/components/common/event-card';
+import { events } from '/components/data/events';
 
 export default function Home() {
   return (
@@ -16,16 +19,41 @@ export default function Home() {
       <GilbertHeader />
 
       <main>
-        <div className='position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary'>
-          <div className='col-md-6 p-lg-5 mx-auto my-5'>
-            <h1 className='display-3 fw-bold'>Meetings &amp; Events</h1>
-            <h3 className='fw-normal text-muted mb-3'>Find things to do in the<br />Town of Gilbert, Arizona!</h3>
-            <h5>Coming Soon!</h5>
-            <div className='d-flex gap-3 justify-content-center lead fw-normal'></div>
+        <section className='p-5 text-center container'>
+          <h1>Things to do in Gilbert</h1>
+        </section>
+
+        <section className='p-5 text-center container bg-interview'>
+          <EventFeature eventInfo={ events.featured } />
+        </section>
+
+        {/* <!-- begin events --> */}
+        <div className='album py-5'>
+          <div className='container'>
+            <div className='row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3'>
+              <div className='col'>
+                <EventCard eventInfo={{}} />
+              </div>
+              <div className='col'>
+                <EventCard eventInfo={ events.registered } />
+              </div>
+              <div className='col'>
+                <EventCard eventInfo={{}} />
+              </div>
+
+              <div className='col'>
+                <EventCard eventInfo={{}} />
+              </div>
+              <div className='col'>
+                <EventCard eventInfo={{}} />
+              </div>
+              <div className='col'>
+                <EventCard eventInfo={{}} />
+              </div>
+            </div>
           </div>
-          <div className='product-device shadow-sm d-none d-md-block'></div>
-          <div className='product-device product-device-2 shadow-sm d-none d-md-block'></div>
         </div>
+        {/* <!-- /end events --> */}
       </main>
 
       <GilbertFooter />

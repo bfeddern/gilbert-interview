@@ -1,0 +1,10 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+      "semi": [2, "always"],
+      "no-unescaped-entities": "off",
+      "no-console": "warn",
+      "no-unused-vars": "warn",
+      "@next/next/no-css-tags": "off"
+  }
+}

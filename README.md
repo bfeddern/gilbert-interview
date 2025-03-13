@@ -16,7 +16,9 @@ AWS Amplify is connected to the GitHub repo.  Upon pushing to the `main` branch,
 
 ## Getting Started
 
-Once the repo is pulled to your local environment, make sure all the packages are installed locally. Navigate to the directory where the code lives, and run the following:
+This assumes that  Node (current version tested: v22.14.0) and npm (current version tested: v10.9.2) are installed locally.
+
+Once the repo is pulled to your local environment, make sure all the application packages are installed locally. Navigate to the directory where the code lives, and run the following:
 ```bash
 npm install
 ```
@@ -44,6 +46,11 @@ npm test -- event.test.js
 ```
 Make sure to change `event.test.js` to the test file of the component you want to test.
 
+To find out the code coverage provided by the tests, use the following:
+```bash
+npm run coverage
+```
+
 
 In order to make sure the code isn't awful, ESLint is also incorporated into this project.  ESLint is a tool for identifying and reporting on patterns found in JavaScript code, with the goal of making code more consistent and avoiding bugs.
 ```bash
@@ -58,6 +65,16 @@ npm run lint
 This project is very much a work-in-progress.  There are still several outstanding things that need to be done before this experiment is production-ready.  Beyond that, there are some "nice to have" things, too.
 
 ### Required ToDo
+1. Add unit tests for pages
+1. Add more eslint rules
+1. Create end-to-end tests with Cypress
+1. Create error handler/page
+1. Accessibility Audit
+1. Event filtering 
 
 
 ### Nice-To-Have ToDo
+1. SEO improvements/research
+1. Create Customer Journey Maps
+1. Implement microtransactions on the card buttons
+
