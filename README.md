@@ -70,11 +70,15 @@ This project is very much a work-in-progress.  There are still several outstandi
 1. Create end-to-end tests with Cypress
 1. Create error handler/page
 1. Accessibility Audit
-1. Event filtering 
+1. Event filtering
+1. Add Google Tag Manager (GTM)
+1. Add Google Analytics (GA4)
 
 
 ### Nice-To-Have ToDo
 1. SEO improvements/research
+1. Dynamic sitemap
 1. Create Customer Journey Maps
 1. Implement microtransactions on the card buttons
+1. Incorporate GA4 Event Tracking on all button clicks
 
